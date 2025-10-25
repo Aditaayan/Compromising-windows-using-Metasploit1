@@ -1,4 +1,4 @@
-# Compromising-windows-using-Metasploit
+<img width="1374" height="706" alt="Screenshot 2025-10-25 090651" src="https://github.com/user-attachments/assets/8fccaa6e-1812-4b52-a9d6-8c949b752823" /># Compromising-windows-using-Metasploit
 Compromising windows using Metasploit
 # Metasploit
 Compromising windows using Metasploit
@@ -86,6 +86,7 @@ To see a list of processes, at the meterpreter > prompt, execute this command:
 ps  ⇒ can see the fun.exe process running with pid 1156
 ## OUTPUT:
 
+<img width="1374" height="706" alt="Screenshot 2025-10-25 090651" src="https://github.com/user-attachments/assets/6d101390-9014-47fc-b0ab-db697eb56b1b" />
 
 
 The Metasploit shell is running inside the "fun.exe" process. If the user closes that process, or logs off, the connection will be lost.
@@ -96,29 +97,12 @@ At the meterpreter > prompt, execute this command:
 migrate -N explorer.exe
 ## OUTPUT:
 
-![Uploading Screenshot 2025-10-25 090651.png…]()
 
 at meterpreter > prompt, execute this command:
 netstat
 A list of network connections appears, including one to a remote port of 4444, as highlighted in the image below.
 Notice the "PID/Program name" value for this connection, which is redacted 
-## OUTPUT:
 
-
-
-Post Exploitation
-The target is now owned. Following are meterpreter commands for key capturing in the target machine
-keyscan_start	Begins capturing keys typed in the target. On the Windows target, open Notepad and type in some text, such as your name.
-## OUTPUT:
-
-
-
-
-keyscan_dump	Shows the keystrokes captured so far
-## OUTPUT:
-
-
-## RESULT:
 The Metasploit framework is  used to compromise windows and is examined successfully.
 
 
