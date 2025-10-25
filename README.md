@@ -1,5 +1,4 @@
-<img width="1374" height="706" alt="Screenshot 2025-10-25 090651" src="https://github.com/user-attachments/assets/8fccaa6e-1812-4b52-a9d6-8c949b752823" /># Compromising-windows-using-Metasploit
-Compromising windows using Metasploit
+
 # Metasploit
 Compromising windows using Metasploit
 
