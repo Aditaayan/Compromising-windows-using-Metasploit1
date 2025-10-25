@@ -96,7 +96,7 @@ At the meterpreter > prompt, execute this command:
 migrate -N explorer.exe
 ## OUTPUT:
 
-<img width="1374" height="781" alt="Screenshot 2025-10-25 090651" src="https://github.com/user-attachments/assets/4a6edcdc-6170-4e28-80f3-379d99ab6a18" />
+![Uploading Screenshot 2025-10-25 090651.png…]()
 
 at meterpreter > prompt, execute this command:
 netstat
